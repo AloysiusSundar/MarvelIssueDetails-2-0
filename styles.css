@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+#comicCoverBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(10px); 
+    opacity: 0.3; 
+    pointer-events: none; 
+    transition: background-image 0.5s ease-in-out; 
+}
+
+header {
+    background-image: url(https://www.megacitycomics.co.uk/acatalog/marvel-fresh-start-banner.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    margin-right: 10px; 
+}
+
+button[type="submit"] {
+    padding: 12px; 
+    font-size: 16px;
+    background-color: #ed1d24;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c00;
+}
+
+button[type="submit"]::before {
+    content: "\1F50D"; 
+}
+
+#comicDetails {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
